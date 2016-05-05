@@ -1,0 +1,12 @@
+fitbit_fitapp_homepage:
+    path:     /
+    defaults: { _controller: FitbitFitappBundle:Default:index }
+
+fitbit_fitapp_circles:
+    path:     /circles
+    defaults: { _controller: FitbitFitappBundle:Circle:circle }
+
+fitbit_api_1y:
+    path: /{type}/{period}
+    defaults:
+        _controller: FitbitFitappBundle:Api:oneYear

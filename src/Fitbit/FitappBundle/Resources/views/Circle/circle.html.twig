@@ -1,0 +1,11 @@
+<div id="circle">
+    <div id="value">
+        <h3>Circles</h3>
+        {% for circle in circles %}
+            <div class="circle">
+                <h3>{{ circle.name }}</h3>
+                <span style="color: {{ circle.color }}"> {{ circle.value }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,4 @@
+services:
+#    fitbit_fitapp.example:
+#        class: Fitbit\FitappBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

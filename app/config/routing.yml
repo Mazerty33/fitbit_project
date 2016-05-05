@@ -1,3 +1,7 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+fitbit_fitapp:
+    resource: "@FitbitFitappBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fitbit_core:
+    resource: "@FitbitCoreBundle/Resources/config/routing.yml"
+    prefix:   /
