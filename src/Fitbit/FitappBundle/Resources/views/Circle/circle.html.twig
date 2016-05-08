@@ -1,11 +1,48 @@
 <div id="circle">
-    <div id="value">
-        <h3>Circles</h3>
-        {% for circle in circles %}
-            <div class="circle">
-                <h3>{{ circle.name }}</h3>
-                <span style="color: {{ circle.color }}" > {{ circle.value }}</span>
-            </div>
-        {% endfor %}
-    </div>
+    {% for circle in circles %}
+        <ul class="progress">
+            <!--  Item  -->
+            <li data-name="{{ circle.name }}" data-percent="{{ circle.value }}%"> <svg viewBox="-10 -10 220 220">
+                    <g fill="none" stroke-width="20" transform="translate(100,100)">
+                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                    </g>
+                </svg> <svg viewBox="-10 -10 220 220">
+                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="{{ circle.value*6.3 }}"></path>
+                </svg> </li>
+        </ul>
+    {% endfor %}
+
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#FF1A00"/>
+                <stop offset="100%" stop-color="#FF432E"/>
+            </linearGradient>
+            <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#FF432E"/>
+                <stop offset="100%" stop-color="#E85E4D"/>
+            </linearGradient>
+            <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                <stop stop-color="#E85E4D"/>
+                <stop offset="100%" stop-color="#E8E85C"/>
+            </linearGradient>
+            <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                <stop stop-color="#E8E85C"/>
+                <stop offset="100%" stop-color="#5FE873"/>
+            </linearGradient>
+            <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                <stop stop-color="#5FE873"/>
+                <stop offset="100%" stop-color="#29E844"/>
+            </linearGradient>
+            <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                <stop stop-color="#29E844"/>
+                <stop offset="100%" stop-color="#00E826"/>
+            </linearGradient>
+        </defs>
+    </svg>
 </div>

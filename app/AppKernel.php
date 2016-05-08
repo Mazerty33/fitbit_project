@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Fitbit\FitappBundle\FitbitFitappBundle(),
             new Fitbit\UserBundle\FitbitUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
