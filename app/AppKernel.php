@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Fitbit\CoreBundle\FitbitCoreBundle(),
             new Fitbit\FitappBundle\FitbitFitappBundle(),
+            new Fitbit\UserBundle\FitbitUserBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

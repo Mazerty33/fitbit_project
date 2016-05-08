@@ -10,3 +10,8 @@ fitbit_api_1y:
     path: /{type}/{period}
     defaults:
         _controller: FitbitFitappBundle:Api:oneYear
+
+fitbit_fitapp_objectives:
+    path: /objectives
+    defaults:
+        _controller: FitbitFitappBundle:Default:objectives
