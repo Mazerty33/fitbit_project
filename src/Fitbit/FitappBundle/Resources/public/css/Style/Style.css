@@ -1,0 +1,195 @@
+html,
+
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#grossebox{
+	width: 100vw;
+	height: 100vh;
+}
+
+#grossebox .haut_gauche{
+	width: 50%;
+	height: 25%;
+	float: left;
+	background: #B5B5B5;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grossebox .haut_droite{
+	width: 50%;
+	height: 25%;
+	float: left;
+	background: #0ba9f3;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grossebox .millieu_gauche{
+	width: 50%;
+	height: 25%;
+	float: left;
+	background: #0ba9f3;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grossebox .millieu_droite{
+	width: 50%;
+	height: 25%;
+	float: left;
+	background: #B5B5B5;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#grossebox .boutons{
+	width: 100%;
+	height: 5%;
+	background: pink;
+	float: left;
+}
+#grossebox .boutons .B1{
+	width: 5%;
+	height: 50%;
+	margin-left: 25%;
+	margin-top: 0.6%;
+	background: red;
+	float: left;
+}
+#grossebox .boutons .B2{
+	width: 5%;
+	height: 50%;
+	margin-left: 10%;
+	margin-top: 0.6%;
+	background: blue;
+	float: left;
+}
+#grossebox .bas_graphique{
+	width: 100%;
+	height: 40%;
+	float: left;
+}
+
+
+
+/*CIRCLE.PHP CARE*/
+
+/* Import the Google Font 'Lato' */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+body {
+    width: 50%;
+    height: 25%;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Lato';
+}
+
+.container {
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+  top: 55px;
+  left: 48px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.node + svg .outer {
+  stroke: #83cd29;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/*.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+
+/*CIRCLE.PHP FIN*/
+
+
