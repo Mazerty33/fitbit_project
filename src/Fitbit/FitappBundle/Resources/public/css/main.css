@@ -1,0 +1,56 @@
+body {
+    max-width: 480px;
+    width:100%;
+    padding: 0px;
+    margin:0;
+
+}
+.top, .bottom {
+    height: 5vh;
+    position: fixed;
+    left:0px;
+    width: 100%;
+}
+
+.bottom{
+    bottom: 0;
+    z-index: 1000;
+}
+.top{
+    top:0;
+}
+.bottom .halfBanner {
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    float: left;
+    height: 5vh;
+}
+.top .banner {
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    float: left;
+    height: 5vh;
+
+}
+
+#circles {
+    height: 20vh;
+    position: static;
+    font-size: 1em;
+}
+
+#graphs {
+    height: 70vh;
+    overflow: scroll;
+    font-size: 1em;
+}
+
+

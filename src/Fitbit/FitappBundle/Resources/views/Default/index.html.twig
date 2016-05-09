@@ -1,0 +1,9 @@
+{% extends 'FitbitCoreBundle::layout.html.twig' %}
+{% block body %}
+    <div id="circles">
+        {{ render(controller("FitbitFitappBundle:Circle:circle")) }}
+    </div>
+    <div id="graphs">
+        {{ render(controller("FitbitFitappBundle:Graph:graph")) }}
+    </div>
+{% endblock %}
